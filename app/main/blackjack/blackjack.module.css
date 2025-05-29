@@ -1,0 +1,188 @@
+.blackjackPage {
+    background: url("../../../public/images/background-image.png");
+    background-size: cover;
+    color: #d0e1f2;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.table {
+    display: flex;
+    width: 1000px;
+    height: 600px;
+    border-radius: 100px;
+    background-color: green;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.hand {
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.cards {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: center;
+    gap: 5px;
+}
+
+.card {
+    height: 100px;
+    width: 70px;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    justify-content: space-evenly;
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+.buttonsBet {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+}
+
+.btn {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    background: #4e6179;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 45px;
+    width: 200px;
+    height: 45px;
+    font-size: 18px;
+    margin: 20px;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+    transform: scale(1.05);
+}
+
+.totalValue {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+}
+
+.userData {
+    background: rgba(30, 30, 30, 0.7);
+    color: #f0f6ff;
+    padding: 15px 20px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    width: fit-content;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid #4e6179;
+}
+
+.input{
+    background: rgba(30, 30, 30, 0.8);
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 600;
+    width: fit-content;
+    margin: 10px;
+    color: #fff;
+    text-align: center;
+    margin: 20px;
+    padding-left: 15px;
+    text-align: center;
+    border: 2px solid #4e6179;
+}
+
+.input:hover {
+    background-color: #fff;
+    color: #000;
+    transform: scale(1.05);
+}
+
+.input:focus {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+}
+.input::placeholder{
+    color: #fff;
+}
+
+.input:hover::placeholder,
+.input:focus::placeholder {
+    color: #000;
+}
+
+.notification {
+    position: fixed;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 50px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #ffcc33, #ff66cc);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    z-index: 9999;
+    animation: fadeIn 0.5s ease, fadeOut 0.5s ease 2.5s;
+}
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -60%);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+    to {
+        opacity: 0;
+        transform: translate(-50%, -40%);
+    }
+}
